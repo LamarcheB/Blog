@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>ABOUT ME</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This blog was built as an exercise for a Udacity program.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/resources/css/blog-style.css">
+
+    <!-- ******* Fonts *******  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Griffy&family=Montserrat:ital,wght@0,400;1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Creates the checkbox to open/close the menu -->
+    <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+    <header>
+        <h1> <a href="about.html">About Me</a></h1>
+        <!-- // Creates the hamurger icon..... -->
+        <div class="hamburger-icon">
+            <label for="openmenu" id="hamburger-label">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+
+    <aside class="menu-pane">
+        <nav class="main-nav">
+            <a href="index.html">
+                <figure>
+                    <img id="logo-img" src="resources/img/zombie-logo.png" alt="Zombie face">
+                    <figcaption>Zombie Blog</figcaption>
+                </figure>
+            </a>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="lore.html">Lore</a></li>
+                <li><a href="survival.html">Survival</a></li>
+                <li><a href="defence.html">Defence</a></li>
+            </ul>
+        </nav>
+        <section class="smedia">
+            <a href="https://www.facebook.com/">
+                <ion-icon name="logo-facebook" id="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://twitter.com/">
+                <ion-icon name="logo-twitter" id="logo-twitter"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/">
+                <ion-icon name="logo-linkedin" id="logo-linkedin"></ion-icon>
+            </a>
+            <a href="mailto:lamarche.w.benjamin@gmail.com">
+                <ion-icon name="mail-outline" id="logo-outline"></ion-icon>
+            </a>
+        </section>
+    </aside>
+
+    <main>
+        <article class="entry">
+            <img src="resources/img/zombie-logo.png" alt="profile image">
+            <div class="entry_content">
+                <h1>Name: Ben</h1>
+                <h2>Student of Udacity.com</h2>
+                <div class="blog-text">
+                    I am a full time technical recruiter who has started learning programming to better understand what
+                    the technologies I recruit for. I really enjoy programming and have worked with HTML, CSS,
+                    JavaScript, Java, C++, and SQL so far.
+
+                    PS: All images were sourced from royalty free stock photo websites.
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
