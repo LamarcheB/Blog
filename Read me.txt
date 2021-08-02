@@ -1,0 +1,5 @@
+Images have all been sourced online and have been directly linked for sourcing purposes to avoid plagiarism.
+- Pexel.com for banner images
+- Logo image - https://pixabay.com/vectors/zombie-city-apocalypse-horror-4659324/
+
+I utilized many forums, courses, and blogs to learn various functions in HTML/CSS, however, I did not copy/past other code directly into my blog but applied theory and concepts as I saw fit.  I heavily utilized the MDM web docs and W3 Schools.com for references and got some inspiration and guidance on how to build a hamburger stack here: https://www.sliderrevolution.com/resources/css-menu/

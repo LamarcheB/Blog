@@ -1,0 +1,416 @@
+#main_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: rgb(216, 216, 216);
+}
+
+body {
+    background: #444;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "sd main";
+    padding: 0;
+    margin: 0;
+}
+
+/* ------- links  -------  */
+
+a:link, a:visited, a:active {
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(105, 105, 105);
+}
+
+#logo-facebook:hover {
+    color: #3b5998
+}
+
+#logo-twitter:hover {
+    color: #00acee;
+}
+
+#logo-linkedin:hover {
+    color: #0072b1;
+}
+
+#mail-outline:hover {
+    color: rgb(204, 218, 126);
+}
+
+/* ------- MAIN  -------  */
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: sd;
+    display: absolute;
+    flex-direction: column;
+    position: fixed;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    z-index: 2;
+}
+
+.entry {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "img desc" "img desc";
+    background-color: rgb(216, 216, 216);
+    border-radius: 1vh;
+    padding: 0;
+    margin: 1rem 1rem;
+    min-height: 200px;
+}
+
+.blog-img {
+    grid-area: img;
+    min-height: 200px;
+}
+
+.blog-desc {
+    grid-area: desc;
+}
+
+.entry>div>p {
+    margin: 0 0 .5rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.entry>div>h3 {
+    padding: 0;
+    text-align: left;
+    font-size: 3rem;
+    margin: 0 0 .1rem 2rem;
+    font-family: 'Creepster', cursive;
+}
+
+.entry>div>h4 {
+    padding: 0;
+    text-align: left;
+    font-size: 1.15rem;
+    margin: 0 0 0rem 2rem;
+    font-style: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.entry>div>h5 {
+    padding: 0;
+    text-align: left;
+    font-size: .8rem;
+    margin: 0 0 .5rem 2rem;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.entry>img {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 1vh;
+}
+
+.entry:hover {
+    position: relative;
+    top: -.25%;
+    background-color: rgb(155, 155, 155);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.884);
+    transition: all 0.3s ease;
+}
+
+/* ------- ASIDE  -------  */
+
+#logo-img {
+    border-radius: 100%;
+    width: 100%;
+    align-items: flex-end;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 1em;
+    font-family: 'Griffy', cursive;
+    font-size: 2em;
+}
+
+.main-nav {
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav>ul, .smedia>ul {
+    padding: 0;
+    margin: 0 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: strong;
+    font-size: 1.5rem;
+}
+
+.main-nav>ul>li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.smedia {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.smedia>ul>li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 5px;
+}
+
+ion-icon {
+    font-size: 2em;
+    margin: 8% 2%;
+    padding: 0px 2%;
+}
+
+/* ***** SMALL ***** */
+
+@media(max-width: 649px) {
+    body {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "main main";
+        padding: 0;
+        margin: 0;
+    }
+    main {
+        padding: 50px 0 0 0;
+    }
+    .entry {
+        margin: 1rem;
+        grid-template-columns: 25% 75%;
+        grid-template-areas: "desc desc";
+        padding: 2%;
+        height: auto;
+        min-height: 0;
+        border-radius: 1vh;
+    }
+    .blog-img {
+        grid-area: img;
+        min-height: auto;
+    }
+    .blog-desc {
+        grid-area: desc;
+    }
+    /* ******** hamburger menu styles ********** */
+    header {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 4rem;
+        background: rgb(49, 56, 51);
+        background: linear-gradient(0deg, rgba(6, 6, 6, 0) 0%, rgba(6, 6, 6, 0.76234243697479) 19%, rgb(57, 58, 57) 100%);
+        z-index: 1;
+    }
+    header>h1 {
+        /* margin-top: 1em; */
+        font-family: 'Griffy', cursive;
+        font-size: 1.5em;
+        margin: .5rem 1rem;
+        padding: 0;
+        color: rgb(224, 247, 227);
+    }
+    /* positions the hamburger */
+    .hamburger-icon {
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        padding-bottom: 2vh;
+    }
+    /* Creates the Hamburger */
+    .hamburger-icon span {
+        height: 4px;
+        width: 35px;
+        background-color: rgb(224, 247, 227);
+        display: block;
+        margin: 3px 0 3px 0;
+        transition: 0.4s ease-in-out;
+        transform: none;
+    }
+    /* Make span or row 1 and 4 of the hamburger icon disappear */
+    #openmenu:checked~header>.hamburger-icon span:nth-of-type(1) {
+        opacity: 0;
+    }
+    #openmenu:checked~header>.hamburger-icon span:nth-of-type(4) {
+        opacity: 0;
+    }
+    /*Make span 2 and 3 transform/rotated to form an x*/
+    #openmenu:checked~header>.hamburger-icon span:nth-of-type(2) {
+        transform: translate(0%, 175%) rotate(-45deg);
+        background-color: rgb(224, 247, 227);
+    }
+    #openmenu:checked~header>.hamburger-icon span:nth-of-type(3) {
+        transform: rotate(45deg);
+        background-color: rgb(224, 247, 227);
+    }
+    /* On check move menu-pane */
+    #openmenu:checked~.menu-pane {
+        left: 0vw;
+        transform: translateX(0vw);
+        width: 250px;
+    }
+    .menu-pane {
+        right: 100%;
+        width: 100%;
+    }
+    menu-pane {
+        background-color: #000;
+        position: absolute;
+        transform: translateX(-90vw);
+        transform-origin: (0, 0);
+        width: 250px;
+        height: 100vh;
+        transition: .8s ease-in-out;
+        z-index: 3;
+    }
+    input.hamburger-checkbox {
+        display: none;
+    }
+    #logo-img {
+        border-radius: 100%;
+        max-width: 200px;
+        align-items: flex-end;
+    }
+    figcaption {
+        text-align: left;
+        margin-top: 1em;
+        font-family: 'Griffy', cursive;
+        font-size: 2em;
+    }
+}
+
+/* ***** MEDIUM ***** */
+
+@media(min-width: 650px) and (max-width: 1000px) {
+    body {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "main main";
+        padding: 0;
+        margin: 0;
+    }
+    main {
+        padding: 50px 0 0 0;
+    }
+    .entry {
+        border-radius: 1vh;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 4rem;
+        background: rgb(49, 56, 51);
+        background: linear-gradient(0deg, rgba(6, 6, 6, 0) 0%, rgba(6, 6, 6, 0.76234243697479) 19%, rgb(57, 58, 57) 100%);
+        z-index: 1;
+    }
+    header>h1 {
+        /* margin-top: 1em; */
+        font-family: 'Griffy', cursive;
+        font-size: 1.5em;
+        margin: .5rem 1rem;
+        padding: 0;
+        color: rgb(224, 247, 227);
+    }
+    /* positions the hamburger */
+    .hamburger-icon {
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        padding-bottom: 2vh;
+    }
+    /* Creates the Hamburger */
+    .hamburger-icon span {
+        height: 4px;
+        width: 35px;
+        background-color: rgb(224, 247, 227);
+        display: block;
+        margin: 3px 0 3px 0;
+        transition: 0.4s ease-in-out;
+        transform: none;
+    }
+    /* Make span or row 1 and 4 of the hamburger icon disappear */
+    #openmenu:checked~header>.hamburger-icon span:nth-of-type(1) {
+        opacity: 0;
+    }
+    #openmenu:checked~header>.hamburger-icon span:nth-of-type(4) {
+        opacity: 0;
+    }
+    /*Make span 2 and 3 transform/rotated to form an x*/
+    #openmenu:checked~header>.hamburger-icon span:nth-of-type(2) {
+        transform: translate(0%, 175%) rotate(-45deg);
+        background-color: rgb(224, 247, 227);
+    }
+    #openmenu:checked~header>.hamburger-icon span:nth-of-type(3) {
+        transform: rotate(45deg);
+        background-color: rgb(224, 247, 227);
+    }
+    /* On check move menu-pane */
+    #openmenu:checked~.menu-pane {
+        left: 0;
+        transform: translateX(0);
+        width: 250px;
+    }
+    .menu-pane {
+        right: 100%;
+        width: 100%;
+    }
+    menu-pane {
+        background-color: #000;
+        position: absolute;
+        transform: translateX(-90vw);
+        transform-origin: (0, 0);
+        width: 250px;
+        height: 100vh;
+        transition: .8s ease-in-out;
+        z-index: 3;
+    }
+    input.hamburger-checkbox {
+        display: none;
+    }
+    #logo-img {
+        border-radius: 100%;
+        max-width: 200px;
+        align-items: flex-end;
+    }
+    figcaption {
+        text-align: left;
+        margin-top: 1em;
+        font-family: 'Griffy', cursive;
+        font-size: 2em;
+    }
+}
