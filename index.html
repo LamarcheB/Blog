@@ -3,33 +3,210 @@
 <html lang="en">
 
 <head>
-    <style>
-        h1 {
-            color: red;
-        }
+    <title>ZOMBIE BLOG</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This blog was built as an exercise for a Udacity program.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/resources/css/sytle.css">
 
-        @media(max-width: 500px) {
-            h1 {
-                color: green;
-            }
-        }
-
-        @media(min-width: 500px) and (max-width: 900px) {
-            h1 {
-                color: blue;
-            }
-        }
-
-        @media(min-width: 901px) {
-            h1 {
-                color: yellow;
-            }
-        }
-    </style>
+    <!-- ******* Fonts *******  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Griffy&family=Montserrat:ital,wght@0,400;1,200&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <!-- Creates the checkbox to open/close the menu -->
+    <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+    <header>
+        <h1> <a href="index.html">Zombie Blog</a></h1>
+        <!-- // Creates the hamurger icon..... -->
+        <div class="hamburger-icon">
+            <label for="openmenu" id="hamburger-label">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+
+    <aside class="menu-pane">
+        <nav class="main-nav">
+            <a href="#">
+                <figure>
+                    <img id="logo-img" src="resources/img/zombie-logo.png" alt="Zombie face">
+                    <figcaption>Zombie Blog</figcaption>
+                </figure>
+            </a>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="lore.html">Lore</a></li>
+                <li><a href="survival.html">Survival</a></li>
+                <li><a href="defence.html">Defence</a></li>
+            </ul>
+        </nav>
+        <section class="smedia">
+            <a href="https://www.facebook.com/">
+                <ion-icon name="logo-facebook" id="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://twitter.com/">
+                <ion-icon name="logo-twitter" id="logo-twitter"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/">
+                <ion-icon name="logo-linkedin" id="logo-linkedin"></ion-icon>
+            </a>
+            <a href="mailto:lamarche.w.benjamin@gmail.com">
+                <ion-icon name="mail-outline" id="logo-outline"></ion-icon>
+            </a>
+        </section>
+    </aside>
+
+    <main>
+        <article class="entry" onclick="location.href='lore.html#lore1';" style="cursor: pointer;">
+            <img class="blog-img" src="https://images.firstpost.com/wp-content/uploads/2020/03/war-zone.jpg" alt="WWZ">
+            <div class="blog-desc">
+                <h3>World War Z</h3>
+                <h4>Lore</h4>
+                <h5>August 2, 2021</h5>
+                <p> Life for former United Nations investigator Gerry Lane and his family seems content. Suddenly,
+                    the
+                    world is plagued by a mysterious infection turning whole human populations into rampaging
+                    mindless
+                    zombies.</p>
+            </div>
+        </article>
+
+        <article class="entry" onclick="location.href='survival.html#survival1';" style="cursor: pointer;">
+            <img class="blog-img"
+                src="https://images.pexels.com/photos/4888433/pexels-photo-4888433.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Boy opening unmarked can of what appears to be Tomato Soup">
+            <div class="blog-desc">
+                <h3>Scavaging</h3>
+                <h4>Survival</h4>
+                <h5>July 30, 2021</h5>
+                <p> Scavenging is the act of searching abandoned areas for food, weapons, ammunition, or other
+                    necessities. This is possibly the least hazardous of the three primary ways of gathering
+                    supplies,
+                    others being Raiding and Looting.</p>
+            </div>
+        </article>
+
+        <article class="entry" onclick="location.href='defence.html#defence1';" style="cursor: pointer;">
+            <img class="blog-img"
+                src="https://marketplace.canva.com/MAC-sU1wFSc/1/thumbnail_large-1/canva-closeup-red-axe-with-blood-for-kill-zombie-woman-in-house-of-ruin%2C-nightmare-horror-of-scary-fear-on-hell-is-monster-devil-in-halloween-festival.-MAC-sU1wFSc.jpg"
+                alt="A zombie crawling towards a blood soaked axe">
+            <div class="blog-desc">
+                <h3>How to Kill a zombie</h3>
+                <h4>Defence</h4>
+                <h5>July 26 2021</h5>
+                <p> In the event of a zombie outbreak, knowing how to kill the undead will be pivotal to
+                    your
+                    survival.
+                </p>
+            </div>
+        </article>
+
+        <article class="entry" onclick="location.href='survival.html#survival2';" style="cursor: pointer;">
+            <img class="blog-img"
+                src="https://images.pexels.com/photos/207324/pexels-photo-207324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Man building a fire">
+            <div class="blog-desc">
+                <h3>Apocolypse DIYs</h3>
+                <h4>Survival</h4>
+                <h5>July 24, 2021</h5>
+                <p> When SHTF and a survival situation is unavoidable, there isn’t always
+                    time to
+                    pack gear or raid the local Home Depot for supplies. As such, it’s useful to know how to
+                    craft
+                    your
+                    own DIY survival tools using materials at hand. </p>
+            </div>
+        </article>
+
+        <article class="entry" onclick="location.href='defence.html#defence2';" style="cursor: pointer;">
+            <img class="blog-img"
+                src="https://images.pexels.com/photos/5202438/pexels-photo-5202438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="A table with multiple guns">
+            <div class="blog-desc">
+                <h3>Weapon Choices</h3>
+                <h4>Defence</h4>
+                <h5>July 17, 2021</h5>
+                <p> There are many different options when it comes to weapons. Here is a list of the top
+                    10 weapons
+                    for
+                    the apocalypse </p>
+            </div>
+        </article>
+
+        <article class="entry" onclick="location.href='lore.html#lore2';" style="cursor: pointer;">
+            <img class="blog-img"
+                src="https://hyperpix.net/wp-content/uploads/2020/05/the-walking-dead-logo-font-download-1200x679.jpg"
+                alt="The Walking Dead">
+            <div class="blog-desc">
+                <h3>Walking Dead</h3>
+                <h4>Lore</h4>
+                <h5>July 12, 2021</h5>
+                <p> In the wake of a zombie apocalypse, various survivors struggle to stay alive. As they search for
+                    safety and evade the undead, they are forced to grapple with rival groups and difficult choices.
+                </p>
+            </div>
+        </article>
+
+        <article class="entry" onclick="location.href='defence.html#defence3';" style="cursor: pointer;">
+            <img class="blog-img"
+                src="https://d1i4t8bqe7zgj6.cloudfront.net/07-16-2018/t_1531745305895_name_Screen_Shot_2018_07_16_at_8_47_11_AM.jpg"
+                alt="Man cleaning a gun">
+            <div class="blog-desc">
+                <h3>Weapon Maintenance</h3>
+                <h4>Defence</h4>
+                <h5>July 6, 2021</h5>
+                <p> In order to ensure your survival, you need to take care of you weapons. Take care of
+                    your
+                    weapons
+                    and they'll take care of you! </p>
+            </div>
+        </article>
+
+        <article class="entry" onclick="location.href='lore.html#lore3';" style="cursor: pointer;">
+            <img class="blog-img"
+                src="https://hyperpix.net/wp-content/uploads/2022/07/28-day-later-logo-font-download.jpg"
+                alt="28 Days Later">
+            <div class="blog-desc">
+                <h3>28 days later</h3>
+                <h4>Lore</h4>
+                <h5>July 3, 2021</h5>
+                <p> Animal activists invade a laboratory with the intention of releasing chimpanzees that are
+                    undergoing experimentation, infected by a virus -a virus that causes rage. The naive activists
+                    ignore the pleas of a scientist to keep the cages locked, with disastrous results.
+                </p>
+            </div>
+        </article>
+
+        <article class="entry" onclick="location.href='survival.html#survival3';" style="cursor: pointer;">
+            <img class="blog-img"
+                src="https://images.pexels.com/photos/296230/pexels-photo-296230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Muddy shovel with young plants beginning to grow">
+            <div class="blog-desc">
+                <h3>Survival Gardens</h3>
+                <h4>Survival</h4>
+                <h5>July 1, 2021</h5>
+                <p>Survival gardening provides ealthy, readily-available food at rock-bottom prices. It’s good
+                    exercise, good for morale, and it’s fun. And if you have to burn, it’s a great way to take
+                    your
+                    mind
+                    off of the stresses worldwide </p>
+            </div>
+        </article>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
