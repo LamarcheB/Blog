@@ -1,10 +1,6 @@
-#main_nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    color: rgb(216, 216, 216);
-}
-
+@import "links.css";
+@import "aside.css";
+@import "main-nav.css";
 body {
     background: rgb(65, 70, 65);
     display: grid;
@@ -16,51 +12,10 @@ body {
     font-size: 16px;
 }
 
-/* ------- links  -------  */
-
-a:link, a:visited, a:active {
-    color: rgb(216, 216, 216);
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(105, 105, 105);
-}
-
-#logo-facebook:hover {
-    color: #3b5998
-}
-
-#logo-twitter:hover {
-    color: #00acee;
-}
-
-#logo-linkedin:hover {
-    color: #0072b1;
-}
-
-#mail-outline:hover {
-    color: rgb(204, 218, 126);
-}
-
 /* ------- MAIN  -------  */
 
 main {
     grid-area: main;
-}
-
-aside {
-    grid-area: sd;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: fixed;
-    background-color: rgb(5, 10, 6);
-    color: rgb(224, 247, 227);
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 250px;
 }
 
 .entry {
@@ -107,66 +62,6 @@ aside {
 .imgcover {
     object-fit: fit;
     object-position: 60% center;
-}
-
-/* ------- ASIDE  -------  */
-
-#logo-img {
-    border-radius: 100%;
-    width: 100%;
-    align-items: flex-end;
-}
-
-figcaption {
-    text-align: center;
-    margin-top: 1em;
-    font-family: 'Griffy', cursive;
-    font-size: 2em;
-}
-
-.main-nav {
-    padding: 0;
-    margin: 0;
-}
-
-.main-nav>ul, .smedia>ul {
-    padding: 0;
-    margin: 0 5%;
-    font-family: 'Montserrat', sans-serif;
-    font-style: strong;
-    font-size: 1.5rem;
-}
-
-.main-nav>ul>li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0
-}
-
-.main-nav {
-    margin-bottom: auto;
-}
-
-.smedia {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.smedia>ul>li {
-    list-style-type: none;
-    display: inline;
-    margin: 0 1;
-}
-
-ion-icon {
-    font-size: 2em;
-    margin: 5px 5px;
-    padding: 0px 5px;
-}
-
-header {
-    display: none;
 }
 
 /* small screens - Phones  */

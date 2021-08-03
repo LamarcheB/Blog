@@ -1,0 +1,6 @@
+#main_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: rgb(216, 216, 216);
+}

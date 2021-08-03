@@ -1,0 +1,26 @@
+/* ------- links  -------  */
+
+a:link, a:visited, a:active {
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(105, 105, 105);
+}
+
+#logo-facebook:hover {
+    color: #3b5998
+}
+
+#logo-twitter:hover {
+    color: #00acee;
+}
+
+#logo-linkedin:hover {
+    color: #0072b1;
+}
+
+#mail-outline:hover {
+    color: rgb(204, 218, 126);
+}
