@@ -64,6 +64,15 @@ main {
     object-position: 60% center;
 }
 
+blockquote {
+    margin: 0 0 .5rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: black;
+}
+
 /* small screens - Phones  */
 
 @media(max-width: 900px) {
